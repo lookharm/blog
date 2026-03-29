@@ -1,4 +1,4 @@
-baseURL = 'https://lookharm.gihub.io/blog'
+baseURL = 'https://lookharm.github.io/blog'
 locale = 'en-us'
 title = 'Blog'
 theme = 'xmin'
