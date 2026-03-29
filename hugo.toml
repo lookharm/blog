@@ -2,3 +2,7 @@ baseURL = 'https://lookharm.gihub.io/blog'
 locale = 'en-us'
 title = 'Blog'
 theme = 'xmin'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
