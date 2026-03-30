@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>So2 Labs Start Up Script | Blog</title>
@@ -42,6 +42,11 @@ It pulls a docker image which is very big (1.6 GB), creates a volume and runs a 
 <ul>
 <li><code>--privileged</code> mode this is very unsafe command to run as it disables the container&rsquo;s isolation and security limits. All host privileges belong to container.</li>
 <li>This is require because of KVM (/dev/kvm). Grants the container extended capabilities, necessary for KVM to access host kernel-level virtualization.</li>
+</ul>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://gitlab.cs.pub.ro/so2/so2-labs">https://gitlab.cs.pub.ro/so2/so2-labs</a></li>
+<li><a href="https://learn.snyk.io/lesson/container-runs-in-privileged-mode/?ecosystem=kubernetes">https://learn.snyk.io/lesson/container-runs-in-privileged-mode/?ecosystem=kubernetes</a></li>
 </ul>
 
 </main>

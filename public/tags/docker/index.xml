@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Blog</title>
+    <link>https://lookharm.github.io/blog/tags/docker/</link>
+    <description>Recent content in Docker on Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Mar 2026 21:07:25 +0700</lastBuildDate>
+    <atom:link href="https://lookharm.github.io/blog/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>So2 Labs Start Up Script</title>
+      <link>https://lookharm.github.io/blog/posts/so2-labs-start-up-script/</link>
+      <pubDate>Mon, 30 Mar 2026 21:07:25 +0700</pubDate>
+      <guid>https://lookharm.github.io/blog/posts/so2-labs-start-up-script/</guid>
+      <description>&lt;p&gt;The shell script &lt;code&gt;local.sh&lt;/code&gt; is responsible for setup environment for the labs.&#xA;It pulls a docker image which is very big (1.6 GB), creates a volume and runs a docker container.&lt;/p&gt;&#xA;&lt;p&gt;Some useful utils that is used by local.sh:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;cut&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;cut&lt;/em&gt; is a useful GNU core utils, it print selected parts of lines, work like CSV, we can set delimiter and select which parts we want to display.&lt;/li&gt;&#xA;&lt;li&gt;e.g. the text &lt;code&gt;read,write,read/write&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;... | cut -d , -f 1,2&lt;/code&gt;   output = read,write&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;... | cut -d , -f 1-3&lt;/code&gt;   output = read,write,read/write&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;docker&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,7 +1,7 @@
 +++
 date = '2026-03-30T21:07:25+07:00'
-draft = true
 title = 'So2 Labs Start Up Script'
+tags = ['shell', 'docker']
 +++
 
 The shell script `local.sh` is responsible for setup environment for the labs.
@@ -18,3 +18,7 @@ Some useful utils that is used by local.sh:
 **docker**
 - `--privileged` mode this is very unsafe command to run as it disables the container's isolation and security limits. All host privileges belong to container.
 - This is require because of KVM (/dev/kvm). Grants the container extended capabilities, necessary for KVM to access host kernel-level virtualization.
+
+## Links
+* https://gitlab.cs.pub.ro/so2/so2-labs
+* https://learn.snyk.io/lesson/container-runs-in-privileged-mode/?ecosystem=kubernetes
