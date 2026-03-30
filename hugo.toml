@@ -6,3 +6,18 @@ theme = 'xmin'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[taxonomies]
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+  [[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 2
+

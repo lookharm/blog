@@ -1,7 +1,7 @@
 +++
 title = 'Compile Kernel Module'
 date = 2026-03-29T23:05:44+07:00
-draft = false
+tags = ['kernel']
 +++
 
 # Compile Kernel Module
