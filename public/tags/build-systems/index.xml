@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Build Systems on Blog</title>
+    <link>https://lookharm.github.io/blog/tags/build-systems/</link>
+    <description>Recent content in Build Systems on Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Apr 2026 20:07:40 +0700</lastBuildDate>
+    <atom:link href="https://lookharm.github.io/blog/tags/build-systems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding CMake</title>
+      <link>https://lookharm.github.io/blog/posts/3-understanding-cmake/</link>
+      <pubDate>Fri, 03 Apr 2026 20:07:40 +0700</pubDate>
+      <guid>https://lookharm.github.io/blog/posts/3-understanding-cmake/</guid>
+      <description>&lt;h2 id=&#34;tldr&#34;&gt;TL;DR&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Build systems exist to manage complexity as projects scale (multiple files, machines, and languages)&lt;/li&gt;&#xA;&lt;li&gt;CMake is a &lt;strong&gt;meta-build system&lt;/strong&gt; that focuses on &lt;em&gt;targets&lt;/em&gt;, not files&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;compile_commands.json&lt;/code&gt; reveals what actually gets compiled and how&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;find_package&lt;/code&gt; is &lt;strong&gt;path-driven&lt;/strong&gt;, not magic — location and structure matter&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;why-i-started-looking-into-this&#34;&gt;Why I Started Looking Into This&lt;/h2&gt;&#xA;&lt;p&gt;At first, compiling code feels simple.&lt;/p&gt;&#xA;&lt;p&gt;You just run:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gcc main.c&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Or:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;javac Main.java&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;That works — until it doesn’t.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

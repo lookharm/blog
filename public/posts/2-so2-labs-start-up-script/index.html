@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>So2 Labs Start Up Script | Blog</title>
+    <link rel="stylesheet" href="/blog/css/style.css" />
+    <link rel="stylesheet" href="/blog/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/blog/">Home</a></li>
+      
+      <li><a href="/blog/tags/">Tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">So2 Labs Start Up Script</span></h1>
+
+<h2 class="date">2026/03/30</h2>
+</div>
+
+<main>
+<p>The shell script <code>local.sh</code> is responsible for setup environment for the labs.
+It pulls a docker image which is very big (1.6 GB), creates a volume and runs a docker container.</p>
+<p>Some useful utils that is used by local.sh:</p>
+<p><strong>cut</strong></p>
+<ul>
+<li><em>cut</em> is a useful GNU core utils, it print selected parts of lines, work like CSV, we can set delimiter and select which parts we want to display.</li>
+<li>e.g. the text <code>read,write,read/write</code></li>
+<li><code>... | cut -d , -f 1,2</code>   output = read,write</li>
+<li><code>... | cut -d , -f 1-3</code>   output = read,write,read/write</li>
+</ul>
+<p><strong>docker</strong></p>
+<ul>
+<li><code>--privileged</code> mode this is very unsafe command to run as it disables the container&rsquo;s isolation and security limits. All host privileges belong to container.</li>
+<li>This is require because of KVM (/dev/kvm). Grants the container extended capabilities, necessary for KVM to access host kernel-level virtualization.</li>
+</ul>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://gitlab.cs.pub.ro/so2/so2-labs">https://gitlab.cs.pub.ro/so2/so2-labs</a></li>
+<li><a href="https://learn.snyk.io/lesson/container-runs-in-privileged-mode/?ecosystem=kubernetes">https://learn.snyk.io/lesson/container-runs-in-privileged-mode/?ecosystem=kubernetes</a></li>
+</ul>
+
+</main>
+
+  <footer>
+  
+  
+  </footer>
+  </body>
+</html>
+
